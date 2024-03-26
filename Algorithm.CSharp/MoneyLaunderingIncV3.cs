@@ -59,7 +59,7 @@ namespace QuantConnect.Algorithm.CSharp
 
             SetCash(10000); // capital
             var btcSecurity = AddCrypto("BTCUSD", Resolution.Daily);
-
+            
             _btcusd = btcSecurity.Symbol;
 
             Fast = EMA(_btcusd, FastPeriod, Resolution.Daily);
@@ -193,3 +193,4 @@ namespace QuantConnect.Algorithm.CSharp
 
     }
 }
+
